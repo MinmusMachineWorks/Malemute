@@ -1,0 +1,58 @@
+{
+  "spec_version": "v1.4",
+  "identifier": "MalemuteRover-MM",
+  "name": "Malemute Rover (MMW)",
+  "abstract": "A 1.25m rover platform for exploration and science collecting, with community fixes",
+  "description": "Minmus Machine Works fork of https://github.com/UmbraSpaceIndustries/Malemute with community fixes. It replaces the official MalemuteRover package (provides and conflicts with it), so mods that depend on MalemuteRover still install.",
+  "author": [
+    "RoverDude",
+    "Machine-Maker"
+  ],
+  "license": "restricted",
+  "release_status": "stable",
+  "ksp_version_min": "1.8",
+  "ksp_version_max": "1.12.99",
+  "resources": {
+    "homepage": "https://github.com/MinmusMachineWorks/Malemute",
+    "repository": "https://github.com/MinmusMachineWorks/Malemute",
+    "x_upstream": "https://github.com/UmbraSpaceIndustries/Malemute"
+  },
+  "provides": [
+    "MalemuteRover"
+  ],
+  "conflicts": [
+    {
+      "name": "MalemuteRover"
+    },
+    {
+      "name": "SETI-CommunityTechTree"
+    }
+  ],
+  "depends": [
+    {
+      "name": "FirespitterCore",
+      "min_version": "v7.6.0"
+    },
+    {
+      "name": "ModuleManager",
+      "min_version": "2.8.0"
+    },
+    {
+      "name": "USITools",
+      "min_version": "0.9.0.0"
+    },
+    {
+      "name": "CommunityResourcePack",
+      "min_version": "0.7.0.0"
+    },
+    {
+      "name": "CommunityCategoryKit"
+    }
+  ],
+  "install": [
+    {
+      "find": "UmbraSpaceIndustries/Malemute",
+      "install_to": "GameData/UmbraSpaceIndustries"
+    }
+  ]
+}
